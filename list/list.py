@@ -96,3 +96,9 @@ print(mylist)  # cherry, banana, apple
 # reverse() method
 mylist.reverse()  # reverses the order of the list
 print(mylist)  # apple, banana, cherry
+
+
+
+mylist = mylist + mylist
+print(mylist)  # apple, banana, cherry, apple, banana, cherry
+print(mylist * 2)  # apple, banana, cherry, apple, banana, cherry, apple, banana, cherry, apple, banana, cherry
