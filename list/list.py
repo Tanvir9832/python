@@ -73,6 +73,13 @@ mylist = ["apple", "banana", "cherry"]
 mylist2 = mylist.copy()  # creates a copy of the list
 print(mylist2)  # apple, banana, cherry
 
+mylist2 = list(mylist)  # creates a copy of the list
+print(mylist2)  # apple, banana, cherry
+
+mylist2 = mylist[:]  # creates a copy of the list
+print(mylist2)  # apple, banana, cherry
+
+
 # count() method
 mylist = ["apple", "banana", "cherry", "banana"]
 print(mylist.count("banana"))  # 2
@@ -98,7 +105,7 @@ mylist.reverse()  # reverses the order of the list
 print(mylist)  # apple, banana, cherry
 
 
-
+# list join
 mylist = mylist + mylist
 print(mylist)  # apple, banana, cherry, apple, banana, cherry
 print(mylist * 2)  # apple, banana, cherry, apple, banana, cherry, apple, banana, cherry, apple, banana, cherry
